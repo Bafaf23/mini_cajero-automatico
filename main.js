@@ -41,6 +41,7 @@ let operation
 do{ operation = prompt("Ingrese una occion: 1-Depositar, 2-Retirar, 3-Mostrar balance, 4-Culminar la sesión")
 
 /*
+      version 1 del codigo del cajero automatico con solo if 
 
     if(operation === "1"){
         let deposit = prompt("Ingrese la cantidad a depositar")
@@ -79,6 +80,7 @@ do{ operation = prompt("Ingrese una occion: 1-Depositar, 2-Retirar, 3-Mostrar ba
     }
  */
 
+    // version 2 usando switch 
 
     switch (operation){
       case "1":
