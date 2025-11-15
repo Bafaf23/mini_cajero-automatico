@@ -5,27 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tailwindcss -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <title>Cajero automatico</title>
   </head>
-  <body class="bg-gray-100 h-screen flex justify-center items-center">
-    <div class="flex flex-col items-center justify-center gap-2">
-      <h1
-        class="bg-white p-3 text-2xl font-bold shadow-md rounded-2xl text-center w-70"
-      >
-        Cajero automatico
-      </h1>
-      <p class="bg-gray-200 p-2 rounded-xl">
-        <span class="text-blue-500">Retira</span>,
-        <span class="text-green-500">consulta</span> y
-        <span class="text-orange-500">deposita</span> desde un solo lugar y sin
-        perder tiempo desde el
-        <span
-          class="bg-linear-to-l from-green-500 via-pink-500 to-orange-500 bg-clip-text text-transparent font-bold text-xl"
-          >cajero virtual de cashles.</span
+  <body class="bg-gray-100 h-screen">
+    <div class="h-full">
+      <header>
+        <nav
+          class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-default bg-blue-900 text-white"
         >
-      </p>
-    </div>
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          >
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span
+                class="self-center text-xl text-heading font-semibold whitespace-nowrap"
+                >Logo</span
+              >
+            </a>
+            <div class="flex items-center gap-2">
+              <button
+                data-collapse-toggle="navbar-dropdown"
+                type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                aria-controls="navbar-dropdown"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="w-6 h-6"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    d="M5 7h14M5 12h14M5 17h14"
+                  />
+                </svg>
+              </button>
+              <button class="hover:bg-blue-700 p-2 cursor-pointer md:hidden">
+                Ingresa al sistema
+              </button>
+            </div>
 
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+              <ul
+                class="flex flex-col font-medium p-4 md:p-1 mt-4 border border-default rounded-2xl bg-blue-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
+                    aria-current="page"
+                    >Inicio</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                    >Sobre nosotros</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                    >Postulate al equipo</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="h-full flex flex-col items-center justify-center gap-2">
+        <h1 class="p-5 bg-white shadow-md rounded-md font-bold text-2xl">
+          Cajero automatico
+        </h1>
+        <p class="text-center">
+          <span
+            class="bg-linear-to-l from-orange-500 via-yellow-500 to-red-500 bg-clip-text text-transparent font-bold"
+            >Retira</span
+          >,
+          <span
+            class="bg-linear-to-l from-blue-500 via-green-500 to-pink-500 bg-clip-text text-transparent font-bold"
+            >consulta</span
+          >,
+          <span
+            class="bg-linear-to-l from-purple-500 via-blue-500 to-red-500 bg-clip-text text-transparent font-bold"
+            >deposita</span
+          >
+          todo desde un solo lugar, desde el
+          <span
+            class="bg-linear-to-l from-orange-400 via-pink-500 to-blue-500 bg-clip-text text-transparent font-bold text-xl"
+            >cajoro Virtual de Cahsless</span
+          >
+        </p>
+      </main>
+    </div>
+    <!-- Archivo Script externo -->
+    4
     <script src="main.js"></script>
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.js"></script>
   </body>
 </html>
