@@ -40,7 +40,11 @@ let operation;
 
 do {
   operation = prompt(
-    "Ingrese una occion: 1-Depositar, 2-Retirar, 3-Mostrar balance, 4-Culminar la sesión"
+    "Ingrese una occion:\n" +
+      "1-Depositar\n" +
+      "2-Retirar\n" +
+      "3-Mostrar balance\n" +
+      "4-Culminar la sesión\n"
   );
 
   /*
@@ -86,9 +90,9 @@ do {
   // version 2 usando switch
 
   switch (operation) {
-    case "1":
+    case "1": // opcion de depositar
       let deposit = prompt("Ingrese la cantidad a depositar");
-
+      //verificando los datos ingresados por el usuario
       if (!isNaN(deposit) && deposit > 0) {
         balance += parseInt(deposit);
         alert(`El deposito de ${deposit} se realizo excitoxamente!`);
@@ -99,10 +103,12 @@ do {
       }
       break;
 
-    case "2":
+    case "2": //opcion de retirar
       let withdraw = prompt("Ingrese la cantidad a retirar");
+      //verificando los datos ingresados por el usuario
       if (isNaN(withdraw) || withdraw <= 0) {
         alert("Cantidad de retiro invalida.");
+        //validando fondos en la cuenta
       } else if (balance < withdraw) {
         alert("Saldo insuficiente cod.01");
       } else {
@@ -112,13 +118,13 @@ do {
       }
       break;
 
-    case "3":
+    case "3": //opcion de consultar
       alert(`Balance disponible: ${balance}`);
       console.log(`Consulta ${balance}`);
       break;
 
-    case "4":
-      alert("Secion finalizada");
+    case "4": //opcion de finalizar
+      alert("Secion finalizada, vuelva pronto");
       console.log("Secion finalizada");
       break;
 
