@@ -34,11 +34,42 @@
  *
  * Fecha tentativa: 16-11-2025
  */
+//Especie rara de login
 
-let balance = 0;
-let operation;
+//usurio
+let userNamen = "Cliente distingido";
 
+//iterador
+let iterador = true;
+
+//intento de clave errada
+let intentos = 0;
+
+//comprovacion de usurio y clave
 do {
+  let user = prompt("Ingresa tu usuario:");
+  let paswordk = prompt("Ingresa tu clave:");
+
+  if (user == "user" && paswordk == "1234") {
+    alert(`Bienvenido, ${userNamen}`);
+    iterador = false;
+    console.log("Secion iniciada");
+  } else {
+    intentos++;
+    alert(
+      `usuario o clave invalida, al tercer intento su usuario se bloqueara ${intentos}`
+    );
+  }
+} while (iterador);
+
+//cuanta
+let balance = 0;
+
+let operation; //operacion
+
+//sistema del cajero
+do {
+  //operaciones
   operation = prompt(
     "Ingrese una occion:\n" +
       "1-Depositar\n" +

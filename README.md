@@ -2,7 +2,7 @@
 
 ## Cajero automatioco
 
-Simulador de cajero automatioco con JavaScript utilizando Loops y operadores logiocos.
+Simulador de cajero automatioco con JavaScript utilizando Loops y operadores logicos.
 
 ## Authors
 
