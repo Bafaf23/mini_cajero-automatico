@@ -88,6 +88,7 @@ do {
   switch (operation) {
     case "1":
       let deposit = prompt("Ingrese la cantidad a depositar");
+
       if (!isNaN(deposit) && deposit > 0) {
         balance += parseInt(deposit);
         alert(`El deposito de ${deposit} se realizo excitoxamente!`);
@@ -122,6 +123,6 @@ do {
       break;
 
     default:
-      alert("Opcion invalida");
+      alert("Opcion invalida, debe selecionar una de las opciones");
   }
 } while (operation !== "4");
